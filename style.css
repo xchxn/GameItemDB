@@ -1,0 +1,49 @@
+.wrapper {
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 5px solid rosybrown;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    min-height: 300px;
+    min-width: 300px;
+    background: #9982bf;
+    align-content: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: auto ;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+      "input-box loginBtn"
+      "input-box regBtn";
+}
+
+.input-box {
+    text-align: center;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.loginBtn {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #f8f8f2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.regBtn {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #f8f8f2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80px;
+}

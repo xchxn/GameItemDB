@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title> 게임 아이템 DB </title>\
+    <title> 게임 아이템 DB </title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <!--  부트스트랩 js 사용 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src=".//test.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href=".//style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
@@ -15,22 +16,25 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <input id="inputId" type="text" class="input-box" placeholder="ID" />
-        <button class="loginBtn" onclick="location.href='main.html'">로그인</button>
-        <input id="inputPw" type="password" class="input-box" placeholder="PW" />
-        <button class="regBtn">회원가입</button>
+    <div class="grid text-center" style="row-gap: 10;">
+        <form>
+            <div class="g-col-8">
+                <div class="mb-3">
+                    <label for="idInput" class="form-label">아이디</label>
+                    <input type="id" class="form-control" id="idInput" placeholder="ID">
+                </div>
+                <div class="g-col-8">
+                    <div class="mb-3">
+                        <label for="pwInput" class="form-label">비밀번호</label>
+                        <input type="password" class="form-control" id="pwInput" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="g-col-4">
+                    <a href="main.html" class="btn btn-primary">로그인</a>
+                </div>
+        </form>
     </div>
-
-    <script>
-        $(".loginBtn").click(function () {
-            alert("로그인 성공!");
-        });
-
-        $(".regBtn").click(function () {
-            alert("회원가입 페이지로 이동합니다.");
-        });
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <!-- 기본적으로 키워드 검색, 필터검색으로 나눔
+        맨위에 큰 탭 두개,
+        키워드검색탭에서는 탭아래에 바로 검색창
+        필터검색 탭에서는 필터링 항목들 만들어서 체크박스 생성
+
+    초기화면에 모든아이템 ㄱㄴㄷ순으로 먼저 띄울지 아니면 빈화면으로 둘지 결정
+    기본적으로 나무위키 표 디자인 차용할듯 
+    이미지 이름 레벨 스탯 / 배경색에 명암 차이-->
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark border border-gray border-start-0 rounded">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">GameItemDB</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav justify-content-center">
+                                <a class="nav-link " href= "main.html"> INTRO </a>
+                                <a class="nav-link active" aria-current="page" href="search.html">아이템 검색</a>
+                                <a class="nav-link" href="aution.html">경매장</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <row>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Level</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </row>
+    </div>
+</body>
+
+</html>
